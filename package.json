@@ -1,0 +1,20 @@
+{
+  "name": "makeup_taask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@shelex/cypress-allure-plugin": "^2.38.4",
+    "allure-commandline": "^2.22.0",
+    "chai": "^4.3.7",
+    "expect.js": "^0.3.1",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1"
+  }
+}
