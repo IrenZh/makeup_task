@@ -14,21 +14,34 @@ describe('Shopping Cart Test', () => {
 
     it('Check add items to cart, calculate total price and delete item from cart', () => {
 
-        homepage.clickParfumCategory
-        parfumspage.selectManCategory
-        homepage.selectFirstItem
-        homepage.addToCart
-        homepage.clickMakeupCategory
-        homepage.selectFirstItem
-        homepage.addToCart
-        homepage.clickCartButton
-        cartmodal.checkIfItemsInCart
-        cartmodal.checkTotalPrice
-        cartmodal.checkIfDeleteButtonVisible
-        cartmodal.clickDeleteButton
-        cartmodal.checkIfItemDelete
+        homepage.clickParfumCategory()
+        homepage.selectFirstItem()
+        homepage.addToCart()
+        homepage.clickMakeupCategory()
+        homepage.selectFirstItem()
+        homepage.addToCart()
+        homepage.clickCartButton()
+        cartmodal.checkIfItemsInCart()
+        cartmodal.checkTotalPrice()
+        cartmodal.checkIfDeleteButtonVisible()
+        cartmodal.clickDeleteButton()
+        cartmodal.checkIfItemDelete()
 
     })
 
-    it('')
+    it('Check add items to cart, calculate total price and update quantity of item in cart', () => {
+
+      homepage.clickParfumCategory()
+        homepage.selectFirstItem()
+        homepage.addToCart()
+        homepage.clickMakeupCategory()
+        homepage.selectFirstItem()
+        homepage.addToCart()
+        homepage.clickCartButton()
+        cartmodal.checkIfItemsInCart()
+        cartmodal.checkTotalPrice()
+        cartmodal.clickUpdateQuantity()
+        cartmodal.checkUpdatedQuantity()
+
+    })
 })

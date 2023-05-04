@@ -12,7 +12,7 @@ describe('Search Item', () => {
     it('Verify if all items displayed correctly according to the search query', () => {
       const searchQuery = 'помада'
 
-      homepage.clickSearchField
+      homepage.clickSearchField()
       homepage.checkIfSearchResults(searchQuery)
   
     })

@@ -14,19 +14,19 @@ export class HomePage {
   }
 
   getProductItem() {
-    return cy.get('.product-item__name')
+    return cy.get('.simple-slider-list__name')
   }
 
   getAddCartButton() {
-    return cy.get('.add-to-cart-button')
+    return cy.get('.product-item__button')
   }
 
   getCartButton() {
-    return cy.get('.minicart-icon')
+    return cy.get('.header-basket')
   }
 
   getSearchField() {
-    return cy.get('#search')
+    return cy.get('[data-id="search-input"]')
   }
 
   clickParfumCategory() {
@@ -38,11 +38,11 @@ export class HomePage {
   }
 
   selectFirstItem() {
-    this.getProductItem.first().click()
+    this.getProductItem().first().click()
   }
 
   addToCart() {
-    this.getAddCartButton.click()
+    this.getAddCartButton().click()
   }
 
   clickCartButton() {
@@ -50,7 +50,7 @@ export class HomePage {
   }
 
   clickSearchField() {
-    this.getSearchField.click().type(searchQuery).type('{enter}')
+    this.getSearchField().click().type(searchQuery).type('{enter}')
   }
 
   checkIfSearchResults(searchQuery) {
