@@ -1,4 +1,4 @@
-# Makeup UA - QA Automation Project
+## Makeup UA - QA Automation Project
 
 This project is an automated testing suites for marketplace Makeup UA, using the Cypress testing framework. The tests are designed to verify the functionality of the website's shopping cart, filters for products and search functionality.
 
@@ -46,13 +46,12 @@ The test results can be viewed in the Allure Report after running tests and gene
 
 The report will be generated in the allure-report folder and can be viewed by opening the index.html file in a browser.
 
-Folder Structure
 
-cypress/e2e: Contains the test scenarios.
-cypress/models: Contains page object models used by the tests.
-allure-report: Contains generated report.
-node_modules: Contains all required libraries that were installed using package.json.
-package.json: Contains all required libraries for success execute of test scenarios.
+## Folder Structure
+___
 
-Technologies Used
-This project uses the following technologies:
+- **cypress/e2e**: Contains the test scenarios.
+- **cypress/models**: Contains page object models used by the tests.
+- **allure-report**: Contains generated report.
+- **node_modules**: Contains all required libraries that were installed using package.json.
+- **package.json**: Contains all required libraries for success execute of test scenarios.
