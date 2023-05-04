@@ -46,12 +46,13 @@ The test results can be viewed in the Allure Report after running tests and gene
 
 The report will be generated in the allure-report folder and can be viewed by opening the index.html file in a browser.
 
+Folder Structure
 
-## Folder Structure
-___
+cypress/e2e: Contains the test scenarios.
+cypress/models: Contains page object models used by the tests.
+allure-report: Contains generated report.
+node_modules: Contains all required libraries that were installed using package.json.
+package.json: Contains all required libraries for success execute of test scenarios.
 
-- **cypress/e2e**: Contains the test scenarios.
-- **cypress/models**: Contains page object models used by the tests.
-- **allure-report**: Contains generated report.
-- **node_modules**: Contains all required libraries that were installed using package.json.
-- **package.json**: Contains all required libraries for success execute of test scenarios.
+Technologies Used
+This project uses the following technologies:
